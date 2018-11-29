@@ -1,0 +1,6 @@
+plot(data3$t,data3$Sub_metering_1,type="s",xlab="",ylab="Energy sub metering")
+lines(data3$t,data3$Sub_metering_2,col="red")
+lines(data3$t,data3$Sub_metering_3,col="blue")
+legend("topright",legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black","red","blue"),lty=1, cex=0.7,y.intersp=0.3)
+dev.copy(png, file="plot3.png")
+dev.off()
